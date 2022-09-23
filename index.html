@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Vasen</title>
+    <meta name="description" content="wundervolle Vasen" />
+    <meta name="author" content="ich" />
+    <link href="css/impress-common.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+
+    <div id="impress" data-transition-duration="2000">
+        <div id="step-0" class="step no-background" data-x="1350" data-y="100" data-z="100" data-scale="3"
+            data-rotate-y="90" data-goto-prev="step-10">
+            <img src="img/start.jpg" />
+        </div>
+
+        <div id="step-1" class="step" data-x="0" data-y="0" data-z="0">
+            <img src="img/Chinese_vase.jpg" width="100%" height="100%" />
+        </div>
+
+        <div id="step-2" class="step" data-x="0" data-y="0" data-z="5000">
+            <p><b>Vase</b> <br /><i>lat. vas/ vasis</i>: Gefäß, Geschirr</p>
+            <img src="img/roemer.jpg" width="80%" height="50%" class="rounded" />
+        </div>
+
+        <div id="step-3" class="step no-background" data-x="420" data-y="-70" data-z="-250" data-rotate-z="45"
+            data-rotate-y="-45" data-rotate-order="zyx">
+            <img src="img/Greec_ancient_vase.jpg" class="rounded" width="100%" height="auto" />
+        </div>
+
+        <div id="step-4" class="step no-background" data-x="700" data-y="350" data-z="-350" data-rotate-z="90"
+            data-rotate-y="-90" data-rotate-order="zyx">
+            <img src="img/arch.jpg" class="rounded" width="100%" height="auto" />
+        </div>
+
+        <div id="step-5" class="step no-background" data-x="422" data-y="780" data-z="-250" data-rotate-z="135"
+            data-rotate-y="-135" data-rotate-order="zyx">
+            <img src="img/kaufmann.jpg" class="rounded" width="100%" height="auto" />
+        </div>
+
+        <div id="step-6" class="step" data-x="0" data-y="702" data-z="0" data-rotate-z="180" data-rotate-y="-180"
+            data-rotate-order="zyx">
+            <p style="font-size: 28px;">
+                Die Gefäße haben sehr unterschiedliche Formen und Designs, aber die meisten alten und antiken Vasen
+                folgen der Tradition eines großen,
+                breiten oder gebogenen Bodens, der einen großen Körper ergibt, der sehr nützlich für die Aufbewahrung
+                von Wasser ist, dann dünner und dünner.
+                Schulter, normalerweise ist die Hälfte der Literflasche der Hals, und schließlich fällt der Rand der
+                Flasche normalerweise heraus,
+                damit sich die Blumen im Inneren auf schöne Weise öffnen können, anstatt sie alle kopfüber in eine
+                Richtung zu bringen.
+            </p>
+        </div>
+
+        <div id="step-7" class="step no-background" data-x="379" data-y="780" data-z="270" data-rotate-z="135"
+            data-rotate-y="-225" data-rotate-order="zyx">
+            <img src="img/big.jpg" class="rounded" width="auto" height="100%" />
+        </div>
+
+        <div id="step-8" class="step no-background" data-x="700" data-y="350" data-z="350" data-rotate-z="90"
+            data-rotate-y="-270" data-rotate-order="zyx">
+            <img src="img/vasen.jpg" class="rounded" width="100%" height="auto" />
+        </div>
+
+        <div id="step-9" class="step no-background" data-x="700" data-y="5350" data-z="350" data-rotate-z="90"
+            data-rotate-y="-270" data-rotate-order="zyx">
+            <img src="img/sth.jpg" class="rounded" width="100%" height="auto" />
+        </div>
+
+        <div id="step-10" class="step no-background" data-x="379" data-y="-70" data-z="270" data-rotate-z="45"
+            data-rotate-y="-315" data-rotate-order="zyx" data-goto-next="step-0">
+            <img src="img/medusa.jpg" class="rounded" width="100%" height="auto" />
+        </div>
+    </div>
+
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script type="text/javascript" src="js/impressjs.js"></script>
+    <script type="text/javascript" src="js/party.min.js"></script>
+    <script>
+        impress().init();
+        document.body.onkeydown = function (e) {
+            if (e.key == "o") {
+                console.log("1");
+                party.confetti(document.getElementById("step-9"), {
+                    count: party.variation.range(50, 200)
+                });
+            }
+        }
+    </script>
+
+</body>
+
+</html>
